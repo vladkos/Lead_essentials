@@ -14,6 +14,8 @@
 		CD1DE1322975F98C00C88C6D /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1DE1312975F98C00C88C6D /* NetworkingTests.swift */; };
 		CD1DE13C2975F98C00C88C6D /* NetworkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1DE13B2975F98C00C88C6D /* NetworkingUITests.swift */; };
 		CD1DE13E2975F98C00C88C6D /* NetworkingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1DE13D2975F98C00C88C6D /* NetworkingUITestsLaunchTests.swift */; };
+		CD1DE14C2975F9B700C88C6D /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1DE14B2975F9B700C88C6D /* FeedItem.swift */; };
+		CD1DE14E2975FA1200C88C6D /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1DE14D2975FA1200C88C6D /* FeedLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		CD1DE1372975F98C00C88C6D /* NetworkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD1DE13B2975F98C00C88C6D /* NetworkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingUITests.swift; sourceTree = "<group>"; };
 		CD1DE13D2975F98C00C88C6D /* NetworkingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CD1DE14B2975F9B700C88C6D /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		CD1DE14D2975FA1200C88C6D /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				CD1DE11F2975F98B00C88C6D /* NetworkingApp.swift */,
+				CD1DE14A2975F9A400C88C6D /* Feed Feature */,
 				CD1DE1212975F98B00C88C6D /* ContentView.swift */,
 				CD1DE1232975F98C00C88C6D /* Assets.xcassets */,
 				CD1DE1252975F98C00C88C6D /* Networking.entitlements */,
@@ -127,6 +132,15 @@
 				CD1DE13D2975F98C00C88C6D /* NetworkingUITestsLaunchTests.swift */,
 			);
 			path = NetworkingUITests;
+			sourceTree = "<group>";
+		};
+		CD1DE14A2975F9A400C88C6D /* Feed Feature */ = {
+			isa = PBXGroup;
+			children = (
+				CD1DE14B2975F9B700C88C6D /* FeedItem.swift */,
+				CD1DE14D2975FA1200C88C6D /* FeedLoader.swift */,
+			);
+			path = "Feed Feature";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +275,8 @@
 			files = (
 				CD1DE1222975F98B00C88C6D /* ContentView.swift in Sources */,
 				CD1DE1202975F98B00C88C6D /* NetworkingApp.swift in Sources */,
+				CD1DE14E2975FA1200C88C6D /* FeedLoader.swift in Sources */,
+				CD1DE14C2975F9B700C88C6D /* FeedItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
