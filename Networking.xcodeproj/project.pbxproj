@@ -11,22 +11,13 @@
 		CD1DE1222975F98B00C88C6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1DE1212975F98B00C88C6D /* ContentView.swift */; };
 		CD1DE1242975F98C00C88C6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD1DE1232975F98C00C88C6D /* Assets.xcassets */; };
 		CD1DE1282975F98C00C88C6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD1DE1272975F98C00C88C6D /* Preview Assets.xcassets */; };
-		CD1DE1322975F98C00C88C6D /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1DE1312975F98C00C88C6D /* NetworkingTests.swift */; };
-		CD1DE13C2975F98C00C88C6D /* NetworkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1DE13B2975F98C00C88C6D /* NetworkingUITests.swift */; };
-		CD1DE13E2975F98C00C88C6D /* NetworkingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1DE13D2975F98C00C88C6D /* NetworkingUITestsLaunchTests.swift */; };
 		CD1DE14C2975F9B700C88C6D /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1DE14B2975F9B700C88C6D /* FeedItem.swift */; };
 		CD1DE14E2975FA1200C88C6D /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1DE14D2975FA1200C88C6D /* FeedLoader.swift */; };
+		CD1DE1522975FB9C00C88C6D /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1DE1512975FB9C00C88C6D /* RemoteFeedLoaderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		CD1DE12E2975F98C00C88C6D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CD1DE1142975F98B00C88C6D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CD1DE11B2975F98B00C88C6D;
-			remoteInfo = Networking;
-		};
-		CD1DE1382975F98C00C88C6D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CD1DE1142975F98B00C88C6D /* Project object */;
 			proxyType = 1;
@@ -43,12 +34,9 @@
 		CD1DE1252975F98C00C88C6D /* Networking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Networking.entitlements; sourceTree = "<group>"; };
 		CD1DE1272975F98C00C88C6D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD1DE12D2975F98C00C88C6D /* NetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD1DE1312975F98C00C88C6D /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
-		CD1DE1372975F98C00C88C6D /* NetworkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD1DE13B2975F98C00C88C6D /* NetworkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingUITests.swift; sourceTree = "<group>"; };
-		CD1DE13D2975F98C00C88C6D /* NetworkingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CD1DE14B2975F9B700C88C6D /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		CD1DE14D2975FA1200C88C6D /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
+		CD1DE1512975FB9C00C88C6D /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +54,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD1DE1342975F98C00C88C6D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +62,6 @@
 			children = (
 				CD1DE11E2975F98B00C88C6D /* Networking */,
 				CD1DE1302975F98C00C88C6D /* NetworkingTests */,
-				CD1DE13A2975F98C00C88C6D /* NetworkingUITests */,
 				CD1DE11D2975F98B00C88C6D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +71,6 @@
 			children = (
 				CD1DE11C2975F98B00C88C6D /* Networking.app */,
 				CD1DE12D2975F98C00C88C6D /* NetworkingTests.xctest */,
-				CD1DE1372975F98C00C88C6D /* NetworkingUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,18 +99,9 @@
 		CD1DE1302975F98C00C88C6D /* NetworkingTests */ = {
 			isa = PBXGroup;
 			children = (
-				CD1DE1312975F98C00C88C6D /* NetworkingTests.swift */,
+				CD1DE1512975FB9C00C88C6D /* RemoteFeedLoaderTests.swift */,
 			);
 			path = NetworkingTests;
-			sourceTree = "<group>";
-		};
-		CD1DE13A2975F98C00C88C6D /* NetworkingUITests */ = {
-			isa = PBXGroup;
-			children = (
-				CD1DE13B2975F98C00C88C6D /* NetworkingUITests.swift */,
-				CD1DE13D2975F98C00C88C6D /* NetworkingUITestsLaunchTests.swift */,
-			);
-			path = NetworkingUITests;
 			sourceTree = "<group>";
 		};
 		CD1DE14A2975F9A400C88C6D /* Feed Feature */ = {
@@ -181,24 +151,6 @@
 			productReference = CD1DE12D2975F98C00C88C6D /* NetworkingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CD1DE1362975F98C00C88C6D /* NetworkingUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CD1DE1472975F98C00C88C6D /* Build configuration list for PBXNativeTarget "NetworkingUITests" */;
-			buildPhases = (
-				CD1DE1332975F98C00C88C6D /* Sources */,
-				CD1DE1342975F98C00C88C6D /* Frameworks */,
-				CD1DE1352975F98C00C88C6D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CD1DE1392975F98C00C88C6D /* PBXTargetDependency */,
-			);
-			name = NetworkingUITests;
-			productName = NetworkingUITests;
-			productReference = CD1DE1372975F98C00C88C6D /* NetworkingUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -213,10 +165,6 @@
 						CreatedOnToolsVersion = 14.2;
 					};
 					CD1DE12C2975F98C00C88C6D = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = CD1DE11B2975F98B00C88C6D;
-					};
-					CD1DE1362975F98C00C88C6D = {
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = CD1DE11B2975F98B00C88C6D;
 					};
@@ -237,7 +185,6 @@
 			targets = (
 				CD1DE11B2975F98B00C88C6D /* Networking */,
 				CD1DE12C2975F98C00C88C6D /* NetworkingTests */,
-				CD1DE1362975F98C00C88C6D /* NetworkingUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -253,13 +200,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CD1DE12B2975F98C00C88C6D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CD1DE1352975F98C00C88C6D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -284,16 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD1DE1322975F98C00C88C6D /* NetworkingTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CD1DE1332975F98C00C88C6D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CD1DE13E2975F98C00C88C6D /* NetworkingUITestsLaunchTests.swift in Sources */,
-				CD1DE13C2975F98C00C88C6D /* NetworkingUITests.swift in Sources */,
+				CD1DE1522975FB9C00C88C6D /* RemoteFeedLoaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,11 +235,6 @@
 			isa = PBXTargetDependency;
 			target = CD1DE11B2975F98B00C88C6D /* Networking */;
 			targetProxy = CD1DE12E2975F98C00C88C6D /* PBXContainerItemProxy */;
-		};
-		CD1DE1392975F98C00C88C6D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CD1DE11B2975F98B00C88C6D /* Networking */;
-			targetProxy = CD1DE1382975F98C00C88C6D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -544,50 +470,6 @@
 			};
 			name = Release;
 		};
-		CD1DE1482975F98C00C88C6D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = G9QPUZU7D6;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = vladkos.NetworkingUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Networking;
-			};
-			name = Debug;
-		};
-		CD1DE1492975F98C00C88C6D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = G9QPUZU7D6;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = vladkos.NetworkingUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Networking;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -614,15 +496,6 @@
 			buildConfigurations = (
 				CD1DE1452975F98C00C88C6D /* Debug */,
 				CD1DE1462975F98C00C88C6D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CD1DE1472975F98C00C88C6D /* Build configuration list for PBXNativeTarget "NetworkingUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CD1DE1482975F98C00C88C6D /* Debug */,
-				CD1DE1492975F98C00C88C6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
