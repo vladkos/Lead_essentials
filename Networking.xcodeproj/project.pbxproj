@@ -14,6 +14,7 @@
 		CD1DE14C2975F9B700C88C6D /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1DE14B2975F9B700C88C6D /* FeedItem.swift */; };
 		CD1DE14E2975FA1200C88C6D /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1DE14D2975FA1200C88C6D /* FeedLoader.swift */; };
 		CD1DE1522975FB9C00C88C6D /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1DE1512975FB9C00C88C6D /* RemoteFeedLoaderTests.swift */; };
+		CD1DE1552976028B00C88C6D /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1DE1542976028B00C88C6D /* RemoteFeedLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		CD1DE14B2975F9B700C88C6D /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		CD1DE14D2975FA1200C88C6D /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		CD1DE1512975FB9C00C88C6D /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTests.swift; sourceTree = "<group>"; };
+		CD1DE1542976028B00C88C6D /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			children = (
 				CD1DE11F2975F98B00C88C6D /* NetworkingApp.swift */,
 				CD1DE14A2975F9A400C88C6D /* Feed Feature */,
+				CD1DE1532976027600C88C6D /* Feed API */,
 				CD1DE1212975F98B00C88C6D /* ContentView.swift */,
 				CD1DE1232975F98C00C88C6D /* Assets.xcassets */,
 				CD1DE1252975F98C00C88C6D /* Networking.entitlements */,
@@ -111,6 +114,14 @@
 				CD1DE14D2975FA1200C88C6D /* FeedLoader.swift */,
 			);
 			path = "Feed Feature";
+			sourceTree = "<group>";
+		};
+		CD1DE1532976027600C88C6D /* Feed API */ = {
+			isa = PBXGroup;
+			children = (
+				CD1DE1542976028B00C88C6D /* RemoteFeedLoader.swift */,
+			);
+			path = "Feed API";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +227,7 @@
 				CD1DE1222975F98B00C88C6D /* ContentView.swift in Sources */,
 				CD1DE1202975F98B00C88C6D /* NetworkingApp.swift in Sources */,
 				CD1DE14E2975FA1200C88C6D /* FeedLoader.swift in Sources */,
+				CD1DE1552976028B00C88C6D /* RemoteFeedLoader.swift in Sources */,
 				CD1DE14C2975F9B700C88C6D /* FeedItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
