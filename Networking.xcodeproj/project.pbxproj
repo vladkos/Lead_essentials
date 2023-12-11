@@ -20,6 +20,8 @@
 		CD82125F29EB3F39000731A6 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD82125E29EB3F39000731A6 /* XCTestCase+MemoryLeakTracking.swift */; };
 		CDA92FAD29E4A0C000CC8BC6 /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA92FAC29E4A0C000CC8BC6 /* URLSessionHTTPClientTests.swift */; };
 		CDCBB6B129EF370F00BD8960 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCBB6B029EF370F00BD8960 /* URLSessionHTTPClient.swift */; };
+		CDCBB6B929EF3A2600BD8960 /* NetworkingEndToEndTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCBB6B829EF3A2600BD8960 /* NetworkingEndToEndTests.swift */; };
+		CDCBB6C029EF461A00BD8960 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD82125E29EB3F39000731A6 /* XCTestCase+MemoryLeakTracking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,9 +32,17 @@
 			remoteGlobalIDString = CD1DE11B2975F98B00C88C6D;
 			remoteInfo = Networking;
 		};
+		CDCBB6BA29EF3A2600BD8960 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD1DE1142975F98B00C88C6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD1DE11B2975F98B00C88C6D;
+			remoteInfo = Networking;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD044B172A4864CD0072FE40 /* CI.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CI.xctestplan; sourceTree = "<group>"; };
 		CD1DE11C2975F98B00C88C6D /* Networking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Networking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD1DE11F2975F98B00C88C6D /* NetworkingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingApp.swift; sourceTree = "<group>"; };
 		CD1DE1212975F98B00C88C6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +59,9 @@
 		CD82125E29EB3F39000731A6 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 		CDA92FAC29E4A0C000CC8BC6 /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
 		CDCBB6B029EF370F00BD8960 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		CDCBB6B629EF3A2600BD8960 /* NetworkingEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDCBB6B829EF3A2600BD8960 /* NetworkingEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingEndToEndTests.swift; sourceTree = "<group>"; };
+		CDCBB6BF29EF403200BD8960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,14 +79,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CDCBB6B329EF3A2600BD8960 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		CD1DE1132975F98B00C88C6D = {
 			isa = PBXGroup;
 			children = (
+				CD044B172A4864CD0072FE40 /* CI.xctestplan */,
 				CD1DE11E2975F98B00C88C6D /* Networking */,
 				CD1DE1302975F98C00C88C6D /* NetworkingTests */,
+				CDCBB6B729EF3A2600BD8960 /* NetworkingEndToEndTests */,
 				CD1DE11D2975F98B00C88C6D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,6 +105,7 @@
 			children = (
 				CD1DE11C2975F98B00C88C6D /* Networking.app */,
 				CD1DE12D2975F98C00C88C6D /* NetworkingTests.xctest */,
+				CDCBB6B629EF3A2600BD8960 /* NetworkingEndToEndTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,6 +113,7 @@
 		CD1DE11E2975F98B00C88C6D /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				CDCBB6BF29EF403200BD8960 /* Info.plist */,
 				CD1DE11F2975F98B00C88C6D /* NetworkingApp.swift */,
 				CD1DE14A2975F9A400C88C6D /* Feed Feature */,
 				CD1DE1532976027600C88C6D /* Feed API */,
@@ -147,6 +171,14 @@
 			path = "Feed API";
 			sourceTree = "<group>";
 		};
+		CDCBB6B729EF3A2600BD8960 /* NetworkingEndToEndTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDCBB6B829EF3A2600BD8960 /* NetworkingEndToEndTests.swift */,
+			);
+			path = NetworkingEndToEndTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -185,6 +217,24 @@
 			productReference = CD1DE12D2975F98C00C88C6D /* NetworkingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CDCBB6B529EF3A2600BD8960 /* NetworkingEndToEndTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDCBB6BC29EF3A2600BD8960 /* Build configuration list for PBXNativeTarget "NetworkingEndToEndTests" */;
+			buildPhases = (
+				CDCBB6B229EF3A2600BD8960 /* Sources */,
+				CDCBB6B329EF3A2600BD8960 /* Frameworks */,
+				CDCBB6B429EF3A2600BD8960 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDCBB6BB29EF3A2600BD8960 /* PBXTargetDependency */,
+			);
+			name = NetworkingEndToEndTests;
+			productName = NetworkingEndToEndTests;
+			productReference = CDCBB6B629EF3A2600BD8960 /* NetworkingEndToEndTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -192,7 +242,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					CD1DE11B2975F98B00C88C6D = {
@@ -200,6 +250,10 @@
 					};
 					CD1DE12C2975F98C00C88C6D = {
 						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CD1DE11B2975F98B00C88C6D;
+					};
+					CDCBB6B529EF3A2600BD8960 = {
+						CreatedOnToolsVersion = 14.3;
 						TestTargetID = CD1DE11B2975F98B00C88C6D;
 					};
 				};
@@ -219,6 +273,7 @@
 			targets = (
 				CD1DE11B2975F98B00C88C6D /* Networking */,
 				CD1DE12C2975F98C00C88C6D /* NetworkingTests */,
+				CDCBB6B529EF3A2600BD8960 /* NetworkingEndToEndTests */,
 			);
 		};
 /* End PBXProject section */
@@ -234,6 +289,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CD1DE12B2975F98C00C88C6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDCBB6B429EF3A2600BD8960 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -268,6 +330,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CDCBB6B229EF3A2600BD8960 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDCBB6B929EF3A2600BD8960 /* NetworkingEndToEndTests.swift in Sources */,
+				CDCBB6C029EF461A00BD8960 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -275,6 +346,11 @@
 			isa = PBXTargetDependency;
 			target = CD1DE11B2975F98B00C88C6D /* Networking */;
 			targetProxy = CD1DE12E2975F98C00C88C6D /* PBXContainerItemProxy */;
+		};
+		CDCBB6BB29EF3A2600BD8960 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD1DE11B2975F98B00C88C6D /* Networking */;
+			targetProxy = CDCBB6BA29EF3A2600BD8960 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -401,6 +477,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Networking/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -439,6 +516,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Networking/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -510,6 +588,47 @@
 			};
 			name = Release;
 		};
+		CDCBB6BD29EF3A2600BD8960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G9QPUZU7D6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vladkos.NetworkingEndToEndTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Networking.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Networking";
+			};
+			name = Debug;
+		};
+		CDCBB6BE29EF3A2600BD8960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G9QPUZU7D6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vladkos.NetworkingEndToEndTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Networking.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Networking";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -536,6 +655,15 @@
 			buildConfigurations = (
 				CD1DE1452975F98C00C88C6D /* Debug */,
 				CD1DE1462975F98C00C88C6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDCBB6BC29EF3A2600BD8960 /* Build configuration list for PBXNativeTarget "NetworkingEndToEndTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDCBB6BD29EF3A2600BD8960 /* Debug */,
+				CDCBB6BE29EF3A2600BD8960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

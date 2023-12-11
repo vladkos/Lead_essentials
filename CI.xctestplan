@@ -1,0 +1,46 @@
+{
+  "configurations" : [
+    {
+      "id" : "24AE662A-B8FF-436B-A5C0-B303288DDC34",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:Networking.xcodeproj",
+          "identifier" : "CD1DE11B2975F98B00C88C6D",
+          "name" : "Networking"
+        }
+      ]
+    },
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Networking.xcodeproj",
+      "identifier" : "CD1DE11B2975F98B00C88C6D",
+      "name" : "Networking"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Networking.xcodeproj",
+        "identifier" : "CD1DE12C2975F98C00C88C6D",
+        "name" : "NetworkingTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Networking.xcodeproj",
+        "identifier" : "CDCBB6B529EF3A2600BD8960",
+        "name" : "NetworkingEndToEndTests"
+      }
+    }
+  ],
+  "version" : 1
+}
