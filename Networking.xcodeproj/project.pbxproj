@@ -57,11 +57,11 @@
 		CD78B980298082820078ED39 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		CD78B982298082EA0078ED39 /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
 		CD82125E29EB3F39000731A6 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
+		CD9829922B669F63009F1B83 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDA92FAC29E4A0C000CC8BC6 /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
 		CDCBB6B029EF370F00BD8960 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		CDCBB6B629EF3A2600BD8960 /* NetworkingEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDCBB6B829EF3A2600BD8960 /* NetworkingEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingEndToEndTests.swift; sourceTree = "<group>"; };
-		CDCBB6BF29EF403200BD8960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +113,7 @@
 		CD1DE11E2975F98B00C88C6D /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				CDCBB6BF29EF403200BD8960 /* Info.plist */,
+				CD9829922B669F63009F1B83 /* Info.plist */,
 				CD1DE11F2975F98B00C88C6D /* NetworkingApp.swift */,
 				CD1DE14A2975F9A400C88C6D /* Feed Feature */,
 				CD1DE1532976027600C88C6D /* Feed API */,
